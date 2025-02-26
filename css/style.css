@@ -1,0 +1,185 @@
+/* **************************************************
+
+--- Typography
+
+- Font Sizes (px):
+10  / 12  / 14  / 16  / 18  / 20  / 24  / 30  / 44  / 52  / 62  / 74  / 86  / 98  
+
+- Font Weights: 
+Default: 400
+
+- Line Heights: 
+Default: 1 
+
+-  Spacing System (px): 
+2 / 4 / 8 / 12  / 16  / 24  / 32  / 48  / 64  / 80  / 96  / 128
+
+--- Colors
+Primary: #e67e22
+Tints: #fdf2e9
+Shades:
+Accents: 
+Greys: #555 
+
+--- Shadows
+
+*/
+
+/* Global reset */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* 
+  10px / 16px = 0.625
+  Percentage of user's browser font-size setting
+  */
+  font-size: 62.5%;
+  /* 1rem = 16px */
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 500;
+  color: #555;
+}
+
+/******************************* 
+       GENERAL STYLES
+*******************************/
+
+.heading-primary {
+  font-size: 5.2rem;
+  font-weight: 700;
+  line-height: 1.05;
+  color: #333;
+  letter-spacing: -0.5px;
+  margin-bottom: 3.2rem;
+}
+
+.margin-rigth-sm {
+  margin-right: 1.6rem !important;
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+
+  /* Put transition in original state */
+  transition: all 0.3s;
+}
+
+.btn--full:link,
+.btn--full:visited {
+  background-color: #e67e22;
+  color: #fff;
+}
+
+.btn--full:hover,
+.btn--full:active {
+  background-color: #b8651b;
+}
+
+.btn--outline:link,
+.btn--outline:visited {
+  background-color: #fae5d3;
+  color: #555;
+}
+
+.btn--outline:hover,
+.btn--outline:active {
+  background-color: #fdf2e9;
+  /* border: 3px solid #fff; */
+  /* Add border inside */
+  box-shadow: inset 0 0 0 3px #fff;
+}
+
+/******************************* 
+         HEADER SECTION
+*******************************/
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fdf2e9;
+
+  height: 9.6rem;
+  padding: 0 4.6rem;
+}
+
+.logo {
+  height: 2.2rem;
+}
+
+/******************************* 
+          HERO SECTION
+*******************************/
+
+.section-hero {
+  background-color: #fdf2e9;
+  padding: 4.8rem 0 9.6rem 0;
+}
+
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 9.6rem;
+}
+
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.5;
+  margin-bottom: 4.8rem;
+}
+
+.hero-img {
+  width: 100%;
+}
+
+.delivered-meals {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  margin-top: 8rem;
+}
+
+.delivered-imgs {
+  display: flex;
+}
+
+.delivered-imgs img {
+  height: 4.8rem;
+  width: 4.8rem;
+  border-radius: 50%;
+  margin-right: -1.6rem;
+  border: 3px solid #fae5d3;
+}
+
+.delivered-imgs img:last-child {
+  margin: 0;
+}
+
+.delivered-text {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.delivered-text span {
+  color: #b8651b;
+  font-weight: 700;
+}
